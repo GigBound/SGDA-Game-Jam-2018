@@ -19,9 +19,16 @@
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_navigation.gml</script>
+    <script>scripts\scr_state_player_turn.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_test_snow</object>
     <object>objects\obj_test_BabyPenguin</object>
+    <object>objects\grid_create</object>
+    <object>objects\path_player</object>
+    <object>objects\obj_control</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Test">
