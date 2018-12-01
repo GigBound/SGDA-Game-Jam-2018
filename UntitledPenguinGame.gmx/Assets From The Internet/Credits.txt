@@ -1,0 +1,6 @@
+SGDA Game Jam 2018
+
+This game would not be possible without the work of the following people:
+yd - https://opengameart.org/content/snow (winter_tilset)
+Nicole Marie T - https://opengameart.org/content/cute-retro-pixel-penguin-16x16 (penguin_16x16)
+
