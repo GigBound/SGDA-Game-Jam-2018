@@ -1,6 +1,13 @@
-for (i = 0; i < 18; i++)
+mp_grid_clear_rectangle(global.map_grid,0,0,640,360);
+with (obj_test_BabyPenguin)
 {
-    var i_x = 32 + 32*i;
+    if (self.id != global.selected.id) {mp_grid_add_rectangle(global.map_grid,x,y,x,y);}
+}
+
+for (i = 0; i < 18; i+=1;)
+{
+    var i_x;
+    i_x = 32 + 32*i;
     if (i_x >= 576)
     {
         i = 0;
@@ -12,10 +19,14 @@ for (i = 0; i < 18; i++)
         {
             instance_create(i_x,row,obj_move_square);
         }
+        else
+        {
+            mp_grid_add_rectangle(global.map_grid, i_x, row, i_x, row);
+        }
     }
     if (row > 320)
     {
-        row = 0;
+        row = 128;
         i = 20;
     }
 }

@@ -7,7 +7,8 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="Test">
-      <sprite>sprites\spr_test_BabyPenguin</sprite>
+      <sprite>sprites\spr_test_BabyPenguin_Idle_FIXME</sprite>
+      <sprite>sprites\spr_test_BabyPenguin_Run_FIXME</sprite>
       <sprite>sprites\spr_test_PapaPenguin</sprite>
       <sprite>sprites\spr_test_MamaPenguin</sprite>
       <sprite>sprites\spr_test_snow</sprite>
@@ -17,6 +18,7 @@
   <backgrounds name="background">
     <backgrounds name="Test">
       <background>background\background_test</background>
+      <background>background\background1</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
@@ -28,7 +30,7 @@
   <objects name="objects">
     <object>objects\obj_test_snow</object>
     <object>objects\obj_test_BabyPenguin</object>
-    <object>objects\grid_create</object>
+    <object>objects\obj_grid</object>
     <object>objects\path_player</object>
     <object>objects\obj_control</object>
     <object>objects\obj_resolution_control</object>
