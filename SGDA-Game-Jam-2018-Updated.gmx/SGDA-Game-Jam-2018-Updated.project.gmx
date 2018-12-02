@@ -14,6 +14,7 @@
       <sprite>sprites\spr_test_snow</sprite>
       <sprite>sprites\spr_move_square</sprite>
     </sprites>
+    <sprite>sprites\spr_test_sea_lion</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Test">
@@ -35,6 +36,7 @@
     <object>objects\obj_control</object>
     <object>objects\obj_resolution_control</object>
     <object>objects\obj_move_square</object>
+    <object>objects\obj_en_sea_lion</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Test">
