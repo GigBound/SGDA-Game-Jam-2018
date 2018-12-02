@@ -1,20 +1,26 @@
 if (instance_position(mouse_x, mouse_y,obj_test_BabyPenguin) && mouse_check_button_pressed(mb_left))
 {
-    var player;
-    player = instance_nearest(mouse_x,mouse_y, obj_test_BabyPenguin);
-    
-    global.selected = player;
-    
-    if (instance_exists(obj_move_square))
+    if (global.moving == false)
     {
-    with (obj_move_square){instance_destroy();}
+        var player;
+        player = instance_nearest(mouse_x,mouse_y, obj_test_BabyPenguin);
+    
+        global.selected = player;
+    
+        if (instance_exists(obj_move_square))
+            {
+                with (obj_move_square){instance_destroy();}
+            }
+        scr_place_move_squares();
     }
-    scr_place_move_squares();
 }
 else if (!instance_position(mouse_x, mouse_y, obj_test_BabyPenguin) && mouse_check_button_pressed(mb_left))
 {
-    global.selected = noone;
-    with (obj_move_square) {instance_destroy();}
+if (global.moving == false)
+    {
+        global.selected = noone;
+        with (obj_move_square) {instance_destroy();}
+    }
 }
 
 if (global.selected != noone && mouse_check_button_pressed(mb_right) && instance_position(mouse_x, mouse_y, obj_move_square))
@@ -39,6 +45,7 @@ if (global.moving == true)
             cur_node_x = x;
             cur_node_y = y;
             global.moving = false;
+            global.enemy = instance_position(mouse_x,mouse_y, obj_en_sea_lion);
         }
     }
 }

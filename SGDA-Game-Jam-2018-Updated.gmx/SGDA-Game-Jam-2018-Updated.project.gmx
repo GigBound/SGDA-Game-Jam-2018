@@ -6,15 +6,24 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprites name="Sea Lion">
+      <sprites name="Move">
+        <sprite>sprites\spr_test_sea_lion</sprite>
+        <sprite>sprites\spr_seaLion_move_down</sprite>
+      </sprites>
+      <sprites name="Bite">
+        <sprite>sprites\spr_seaLion_bite_down</sprite>
+      </sprites>
+    </sprites>
     <sprites name="Test">
       <sprite>sprites\spr_test_BabyPenguin_Idle_FIXME</sprite>
+      <sprite>sprites\spr_test_BabyPenguin_Die_FIXME</sprite>
       <sprite>sprites\spr_test_BabyPenguin_Run_FIXME</sprite>
       <sprite>sprites\spr_test_PapaPenguin</sprite>
       <sprite>sprites\spr_test_MamaPenguin</sprite>
       <sprite>sprites\spr_test_snow</sprite>
       <sprite>sprites\spr_move_square</sprite>
     </sprites>
-    <sprite>sprites\spr_test_sea_lion</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Test">
