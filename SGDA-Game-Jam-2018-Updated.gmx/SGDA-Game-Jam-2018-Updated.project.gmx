@@ -19,10 +19,24 @@
       <sprite>sprites\spr_test_BabyPenguin_Idle_FIXME</sprite>
       <sprite>sprites\spr_test_BabyPenguin_Die_FIXME</sprite>
       <sprite>sprites\spr_test_BabyPenguin_Run_FIXME</sprite>
-      <sprite>sprites\spr_test_PapaPenguin</sprite>
-      <sprite>sprites\spr_test_MamaPenguin</sprite>
       <sprite>sprites\spr_test_snow</sprite>
       <sprite>sprites\spr_move_square</sprite>
+      <sprite>sprites\spr_move_square_ai</sprite>
+      <sprite>sprites\spr_attack_square</sprite>
+      <sprites name="penguinos">
+        <sprites name="small">
+          <sprite>sprites\spr_peng_small_idle</sprite>
+          <sprite>sprites\spr_peng_small_dead</sprite>
+        </sprites>
+        <sprites name="medium">
+          <sprite>sprites\spr_peng_medium_idle</sprite>
+          <sprite>sprites\spr_peng_medium_dead</sprite>
+        </sprites>
+        <sprites name="large">
+          <sprite>sprites\spr_peng_large_idle</sprite>
+          <sprite>sprites\spr_peng_large_dead</sprite>
+        </sprites>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -36,16 +50,25 @@
     <script>scripts\scr_navigation.gml</script>
     <script>scripts\scr_state_player_turn.gml</script>
     <script>scripts\scr_place_move_squares.gml</script>
+    <script>scripts\scr_state_ai_turn.gml</script>
+    <script>scripts\scr_place_move_squares_ai.gml</script>
+    <script>scripts\scr_melee_attack_ai.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_test_snow</object>
-    <object>objects\obj_test_BabyPenguin</object>
+    <object>objects\obj_test_lightPenguin</object>
+    <object>objects\obj_test_averagePenguin</object>
+    <object>objects\obj_test_tankyPenguin</object>
     <object>objects\obj_grid</object>
     <object>objects\path_player</object>
     <object>objects\obj_control</object>
     <object>objects\obj_resolution_control</object>
     <object>objects\obj_move_square</object>
-    <object>objects\obj_en_sea_lion</object>
+    <object>objects\obj_move_square_ai</object>
+    <object>objects\obj_attack_square</object>
+    <object>objects\par_enemy</object>
+    <object>objects\obj_test_seaLion</object>
+    <object>objects\obj_damage_dealt</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Test">
